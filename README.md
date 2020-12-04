@@ -7,14 +7,16 @@ La sociedad ha vuelto a ser puesta en prueba frente a una pandemia, esta vez cau
 
 La investigación de este proyecto se centró en la realización de una simulación para el estudio del desarrollo del virus utilizando teoría de grafos, se partió de la idea de una población con una cantidad determinada de personas, de las cuales cada una posee características aleatorias tales como nombre, identificación y su relación con otros individuos, además de cualidades susceptibles al virus tales como enfermedades respiratorias y su edad; obteniendo un grafo base que presenta personas no infectadas, con enfermedades respiratorias, contagiados y combinaciones de estas, por lo cual cada persona representa un vértice y las relaciones entre ellas las aristas. Para desarrollar la simulación del avance del virus se utilizó un posible modelo estocástico a cerca del Covid 19, donde se tienen diversos datos estadísticos presentados durante el desarrollo de este brote, como la tasa y probabilidad de mortalidad con respecto a rangos de edades, afección respiratoria, tasa de contagio, la cual comparte factores anteriormente mencionados, recuperación promedio, etc. El tratamiento, análisis y la implementación de la simulación se realizó en el lenguaje de programación Python y se desarrolló en el entorno de Jupyter Notebook.
 
-INTRODUCCIÓN
+## INTRODUCCIÓN
+
 Los virus han estado presente siempre en la historia de la humanidad, y algunos han afectado en gran escala a la sociedad, el covid-19 no es la excepción, a pesar de la tecnología y la gran evolución de la sociedad en los diferentes campos que se ha logrado obtener hoy en día, el covid-19 logro desestabilizar la economía y la misma convivencia humana en la sociedad, al paso del tiempo quizás ya la humanidad fuera logrado superar tal pandemia, pero esto depende de muchos factores, como el desacato de sanidad por una parte de la sociedad, la desigualdad social, entre otros. después de todo, errar está en el ámbito humano, una de las cualidades que hace especial a la humanidad, si ese no fuera nuestro caso, no podríamos darle un mínimo sentido a nuestra existencia la cual le es indiferente a tan basto universo.
 
 El objetivo de este proyecto es lograr demostrar el comportamiento que debe presentar cada persona en el momento de enfrentar esta pandemia que azota con la gran cantidad de personas en el mundo. A su vez se muestra la importancia del aislamiento colectivo y el cuidado personal para lograr combatir y disminuir a mayor escala la enfermedad.
 
 En conclusión, analizaremos el comportamiento de una población con la enfermedad COVID-19, producido por el virus SARS-COV2, en el cual se lleva un seguimiento de cada uno de los casos presentados por la trasmisión de la enfermedad y así ver como al pasar de los días y semanas, el virus logra alterar al ser humano y aumentar el riesgo de muerte de la misma persona. De este modo podemos ver ilustrado como las personas portadoras del virus al momento de tomar la decisión de aislarse, logran la disminución de contagio, también podemos observar como pueden recuperarse y la cantidad de muertes que se pueden llegar a ocasionar. Por esto mismo es fundamental enseñar las diversas maneras para combatir y disminuir el virus para evitar un mayor riesgo a la población.
 
-REVISIÓN DE LA LITERATURA
+## REVISIÓN DE LA LITERATURA
+
 Pierson, D. (2020, 21 marzo). Si me infecto con coronavirus, ¿cuáles son mis probabilidades de supervivencia? - Los Angeles Times. Los Angeles Times en Español. https://www.latimes.com/espanol/internacional/articulo/2020-03-20/si-me-infecto-con-coronavirus-cuales-son-mis-probabilidades-de-supervivencia
 
 Ruiz-Ramírez, J. (s. f.). Modelo estocástico de la transmisión de enfermedades infecciosas. SCIELO. Recuperado 2 de septiembre de 2020, de http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0036-36342009000500006
@@ -23,8 +25,10 @@ Cuffe, R. (2020, 3 marzo). ¿Qué tan mortal es realmente el nuevo coronavirus? 
 
 OMS. (s. f.). Preguntas y respuestas sobre la enfermedad por coronavirus (COVID-19). Organización Mundial de la Salud. https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses?gclid=CjwKCAjwkdL6BRAREiwA-kiczF1ymYKxIPJUD0cx4nMHzHcFsmrZMYACMaAqer11--bpNkmviwuYgBoCUq0QAvD_BwE
 
-MÉTODO
+## MÉTODO
+
 DEFINICIÓN DEL GRAFO
+
 Definimos un conjunto de personas como:
 
 P= {p1,p2,p3,...,pn}
@@ -59,7 +63,8 @@ La relación de incidencia se define como:
 
 La relación de incidencia define la relación social entre las personas de la población, donde un inviduo no puede estar relacinado consigo mismo y además esta puede definir tres tipos de relación, las cuales son: PERSONA INFECTADA-PERSONA INFECTADA, PERSONA INFECTADA-PERSONA NO INFECTADA y PERSONA NO INFECTADA-PERSONA NO INFECTADA.
 
-PSEUDOCÓDIGO
+## PSEUDOCÓDIGO
+
 Descripción del algoritmo usado para representar el problema
 Pseudocodigo
 Declaramos la variable array
